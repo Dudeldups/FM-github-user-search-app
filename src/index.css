@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "SpaceMono";
+    src: url("/assets/fonts/SpaceMono-Regular.ttf");
+  }
+
+  html {
+    font:
+      400 0.8125rem / normal "SpaceMono",
+      sans-serif;
+  }
+}
