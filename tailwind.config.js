@@ -16,6 +16,7 @@ export default {
         700: "#2b3442",
         900: "ä141d2f",
       },
+      white: "#fff",
       error: "#f74646",
     },
   },
