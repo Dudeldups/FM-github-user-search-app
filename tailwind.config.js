@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {},
     colors: {
+      transparent: "transparent",
       blue: {
         DEFAULT: "#0079ff",
         gray: "#4b6a9b",
@@ -14,7 +15,7 @@ export default {
         300: "#f6f8ff",
         500: "#697c9a",
         700: "#2b3442",
-        900: "ä141d2f",
+        900: "#141d2f",
       },
       white: "#fff",
       error: "#f74646",
