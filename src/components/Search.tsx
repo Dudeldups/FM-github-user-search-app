@@ -11,7 +11,7 @@ export default function Search({ setUser }: SearchProps) {
     setFormInput(e.target.value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setUser(formInput);
   };
@@ -20,7 +20,7 @@ export default function Search({ setUser }: SearchProps) {
     <form
       action="#"
       onSubmit={handleSubmit}
-      className="flex items-center flex-wrap justify-center gap-2 md:gap-[1.67rem] mt-[2.2rem] py-[0.6rem] pl-4 md:pl-8 pr-[0.6rem] bg-white dark:bg-blue-dark rounded-[0.9375rem]">
+      className="flex items-center flex-wrap justify-center gap-2 md:gap-[1.67rem] mt-[2.2rem] mb-4 md:mb-6 py-[0.6rem] pl-4 md:pl-8 pr-[0.6rem] bg-white dark:bg-blue-dark rounded-[0.9375rem] shadow-[0_1rem_1.875rem_-.625rem_rgba(70,96,187,0.20)] dark:shadow-none">
       <label htmlFor="search" className="shrink-0">
         <img
           src="/assets/images/icon-search.svg"

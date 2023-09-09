@@ -13,6 +13,8 @@ export default function App() {
     error,
   } = useFetch(`https://api.github.com/users/${user}`);
 
+  console.log(userData);
+
   return (
     <div className="flex flex-col items-center bg-gray-300 dark:bg-gray-900 text-blue-gray dark:text-white h-screen">
       <div className="flex-auto grid place-content-center max-w-[45.625rem]">
