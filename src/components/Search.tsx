@@ -1,9 +1,27 @@
-export default function Search() {
+import { useState } from "react";
+
+type SearchProps = {
+  setUser: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export default function Search({ setUser }: SearchProps) {
+  const [formInput, setFormInput] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormInput(e.target.value);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setUser(formInput);
+  };
+
   return (
     <form
       action="#"
-      className="flex items-center gap-[0.55rem] md:gap-[1.67rem] mt-[2.2rem] py-[0.6rem] pl-4 md:pl-8 pr-[0.6rem] bg-white dark:bg-blue-dark rounded-[0.9375rem]">
-      <label htmlFor="search" className="">
+      onSubmit={handleSubmit}
+      className="flex items-center flex-wrap justify-center gap-2 md:gap-[1.67rem] mt-[2.2rem] py-[0.6rem] pl-4 md:pl-8 pr-[0.6rem] bg-white dark:bg-blue-dark rounded-[0.9375rem]">
+      <label htmlFor="search" className="shrink-0">
         <img
           src="/assets/images/icon-search.svg"
           alt=""
@@ -16,7 +34,9 @@ export default function Search() {
         id="search"
         type="text"
         placeholder="Search GitHub username..."
-        className="grow bg-transparent min-w-[25ch] leading-[1.5625rem] caret-blue"
+        value={formInput}
+        onChange={handleChange}
+        className="flex-auto bg-transparent min-w-[25ch] leading-[1.5625rem] caret-blue"
       />
       <button
         type="submit"

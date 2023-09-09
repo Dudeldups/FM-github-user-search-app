@@ -37,7 +37,7 @@ export default function Navbar() {
   const inactiveTheme = isDarkMode ? "light" : "dark";
 
   return (
-    <nav className="flex gap-6 max-w-[45.625rem] mt-[1.94rem] px-6 items-center font-bold">
+    <nav className="flex gap-6 mt-[1.94rem] px-6 items-center font-bold">
       <a
         href="https://fm-github-user-search-9000.netlify.app/"
         className="mr-auto text-[1.625rem]">

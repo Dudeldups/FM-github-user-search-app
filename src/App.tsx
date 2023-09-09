@@ -1,17 +1,36 @@
+import { useState } from "react";
 import DevStats from "./components/DevStats";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
+import useFetch from "./hooks/useFetch";
 
 export default function App() {
+  const [user, setUser] = useState("octocat");
+  const {
+    data: userData,
+    isLoading,
+    error,
+  } = useFetch(`https://api.github.com/users/${user}`);
+
   return (
-    <div className="grid place-content-center bg-gray-300 dark:bg-gray-900 text-blue-gray dark:text-white h-screen">
-      <Navbar />
-      <main className="max-w-[45.625rem] px-6">
-        <h1 className="sr-only">GitHub user search</h1>
-        <Search />
-        <DevStats />
-      </main>
+    <div className="flex flex-col items-center bg-gray-300 dark:bg-gray-900 text-blue-gray dark:text-white h-screen">
+      <div className="flex-auto grid place-content-center max-w-[45.625rem]">
+        <Navbar />
+        <main className="px-6">
+          <h1 className="sr-only">GitHub user search</h1>
+          <Search setUser={setUser} />
+          {isLoading && <div>Loading...</div>}
+          {error && (
+            <p className="mt-8 mb-8 text-center">
+              {error === "This site does not exist"
+                ? "This user does not exist"
+                : "There was an error loading the data. Please try again."}
+            </p>
+          )}
+          {!error && userData && <DevStats userData={userData} />}
+        </main>
+      </div>
       <Footer />
     </div>
   );
