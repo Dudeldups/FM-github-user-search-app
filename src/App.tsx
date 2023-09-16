@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div className="flex flex-col items-center bg-gray-300 dark:bg-gray-900 text-blue-gray dark:text-white h-screen">
-      <div className="flex-auto grid place-content-center max-w-[45.625rem]">
+      <div className="flex-auto grid content-center min-w-[min(100%,45.625rem)]">
         <Navbar />
         <main className="px-6">
           <h1 className="sr-only">GitHub user search</h1>

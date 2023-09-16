@@ -72,43 +72,50 @@ export default function DevStats({ userData }: DevStatsProps) {
         </a>
       </dl>
       <ul className="grid gap-4 mt-6">
-        <li className="grid grid-cols-[2.75rem_1fr]">
-          <img
-            src="/assets/images/icon-location.svg"
-            alt=""
-            aria-hidden="true"
-            className=""
-          />
-          <p className="">{userData.location}</p>
-        </li>
-        <li className="grid grid-cols-[2.75rem_1fr]">
-          <img
-            src="/assets/images/icon-website.svg"
-            alt=""
-            aria-hidden="true"
-            className=""
-          />
-          <p className="">{userData.blog}</p>
-        </li>
-        <a href=""></a>
-        <li className="grid grid-cols-[2.75rem_1fr]">
-          <img
-            src="/assets/images/icon-twitter.svg"
-            alt=""
-            aria-hidden="true"
-            className=""
-          />
-          <p className="">{userData.twitter_username}</p>
-        </li>
-        <li className="grid grid-cols-[2.75rem_1fr]">
-          <img
-            src="/assets/images/icon-company.svg"
-            alt=""
-            aria-hidden="true"
-            className=""
-          />
-          <p className="">{userData.company}</p>
-        </li>
+        <a href="#">
+          <li className="grid grid-cols-[2.75rem_1fr]">
+            <img
+              src="/assets/images/icon-location.svg"
+              alt=""
+              aria-hidden="true"
+              className=""
+            />
+            <p className="">{userData.location}</p>
+          </li>
+        </a>
+        <a href="#">
+          <li className="grid grid-cols-[2.75rem_1fr]">
+            <img
+              src="/assets/images/icon-website.svg"
+              alt=""
+              aria-hidden="true"
+              className=""
+            />
+            <p className="">{userData.blog}</p>
+          </li>
+        </a>
+        <a href="#">
+          <li className="grid grid-cols-[2.75rem_1fr]">
+            <img
+              src="/assets/images/icon-twitter.svg"
+              alt=""
+              aria-hidden="true"
+              className=""
+            />
+            <p className="">{userData.twitter_username}</p>
+          </li>
+        </a>
+        <a href="#">
+          <li className="grid grid-cols-[2.75rem_1fr]">
+            <img
+              src="/assets/images/icon-company.svg"
+              alt=""
+              aria-hidden="true"
+              className=""
+            />
+            <p className="">{userData.company}</p>
+          </li>
+        </a>
       </ul>
     </article>
   );
