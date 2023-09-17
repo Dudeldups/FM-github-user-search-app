@@ -38,10 +38,11 @@ Users should be able to:
 ### Added features
 
 - Added a Google Maps link for the user's location
+- Dark mode preferred on first load, except for users that explicitly prefer light mode
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/reacttstailwind-github-user-search-6ZiGvyrkzU)
 
 - [Live site](https://fm-github-user-search-9000.netlify.app/)
 
@@ -49,7 +50,7 @@ Users should be able to:
 
 #### Desktop
 
-![Solution]()
+![Solution](https://github.com/Dudeldups/FM-github-user-search-app/blob/main/screenshots/solution.png)
 
 ## My process
 
