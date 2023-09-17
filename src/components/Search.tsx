@@ -36,7 +36,7 @@ export default function Search({ setUser }: SearchProps) {
         placeholder="Search GitHub username..."
         value={formInput}
         onChange={handleChange}
-        className="flex-auto bg-transparent min-w-[25ch] leading-[1.5625rem] caret-blue"
+        className="flex-auto px-1 bg-transparent min-w-[25ch] sm:text-[1.125rem] leading-[1.5625rem] caret-blue"
       />
       <button
         type="submit"

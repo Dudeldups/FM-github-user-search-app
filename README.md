@@ -10,7 +10,7 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-    <!-- - [Added features](#added-features) -->
+    - [Added features](#added-features)
   - [Links](#links)
   - [Screenshot](#screenshot)
 - [My process](#my-process)
@@ -39,9 +39,9 @@ Users should be able to:
 - If any of the location, website, twitter, or company properties are empty, show the text "Not Available" with transparency added (as shown in the design).
 - Website, twitter, and company information should all be links to those resaources. For the company link, it should remove the `@` symbol and link to the company page on GitHub. For Octocat, with `@github` being returned for the company, this would lead to a URL of `https://github.com/github`.
 
-<!-- ### Added features
+### Added features
 
-- -->
+- Added a Google Maps link for the user's location
 
 ### Links
 
