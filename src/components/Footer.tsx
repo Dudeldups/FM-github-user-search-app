@@ -7,7 +7,7 @@ export default function Footer() {
           <a
             href="https://www.frontendmentor.io/profile/Dudeldups"
             target="_blank"
-            className="text-error">
+            className="text-error font-semibold hover:underline">
             Frontend Mentor
           </a>
           .
@@ -17,7 +17,7 @@ export default function Footer() {
           <a
             href="https://github.com/Dudeldups"
             target="_blank"
-            className="text-error">
+            className="text-error font-semibold hover:underline">
             Arne Jacob
           </a>
           .

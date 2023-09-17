@@ -37,17 +37,17 @@ export default function Navbar() {
   const inactiveTheme = isDarkMode ? "light" : "dark";
 
   return (
-    <nav className="flex gap-6 mt-[1.94rem] px-6 items-center font-bold">
+    <nav className="flex gap-6 mt-[1.94rem] items-center font-bold">
       <a
         href="https://fm-github-user-search-9000.netlify.app/"
-        className="mr-auto text-[1.625rem]">
+        className="mr-auto text-[1.85rem] hover:opacity-75 transition-opacity duration-200">
         devfinder
       </a>
       <button
         aria-pressed={isDarkMode}
         aria-label="toggle dark theme"
         onClick={toggleIsDarkMode}
-        className="flex gap-4 items-center uppercase p-1 text-[0.8125rem] tracking-[0.15625rem]">
+        className="flex gap-4 items-center uppercase p-1 text-[0.9rem] tracking-[0.15625rem] hover:opacity-75 transition-opacity duration-200">
         {inactiveTheme}
         <img src={icon} alt="" aria-hidden="true" className="inline-block" />
         <span aria-live="polite" className="sr-only">{`${
